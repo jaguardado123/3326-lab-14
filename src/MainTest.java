@@ -24,7 +24,7 @@ public class MainTest {
 		Main obj = new Main();
 		Dog dog = new Dog();
 		dog.age = 4;
-		obj.incrementArr(dog);
+		obj.incrementObj(dog);
 		assertEquals(5, dog.age);
 	}
 
@@ -49,7 +49,7 @@ public class MainTest {
 		Main obj = new Main();
 		Dog dog = new Dog();
 		dog.age = 7;
-		obj.incrementArr(dog);
+		obj.incrementObj(dog);
 		assertEquals(8, dog.age);
 	}
 }
