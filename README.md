@@ -44,19 +44,19 @@ For example, look at the image below and see how array `arr` is passed into func
 
 For this assignment you will practice working with **pass-by-copy** and **pass-by-reference** parameters.
 
-Frist let's create a seperate class to test our objects. Create a class `Dog` with a **public** attribute `age`. 
+Create the following **3 functions** and call them inside the main() function. See if which elements got updated to determine if they were passed-by-copy or passed-by-reference.
 
-Now inside `Main`, create three **void** methods `incrementVar()`, `incrementArr()`, and `incrementObj()`. Give each method a single parameter, `incrementVar()`'s parameter should be type **int**, `incrementArr()`'s parameter should be type **int[]**, and `incrementObj()`'s parameter should be type **Dog**. Each method should **increment the value in their parameter by one**. For `incrementArr()` increment all the array values by one and for `incrementObj()` increment `age` by one.
+- `incrementVar( x )` method should have a single integer parameter and increment it by 1.
+- `incrementArr( []x )` method should have a single integer array parameter and incrment all values by 1.
+- `incrementObj( x )` method should have a single Dog object parameter and increment age by 1.
 
-Now test your methods, inside the `main()` method declare and initialize (assign a values) an integer variable, an integer array, and a Dog object and pass them into their respective methods. Lastly, print out the variable, array, and object attribute to see which were passed-by-copy and which were passed-by-reference.
-
-No output is required for this lab, but you can test your solution by running the commands below in your terminal.
-
+You can test your code by running the following command in your terminal. 
 ```
-./build.sh
 ./test.sh
 ```
 
 ## Submit your assignment
 
-To submit your lab assignment click on the source control icon (3 circles with 2 lines) on your leftside navbar. Next, click on the '+' symbol next to "Changes" to stage your changes. Lastly, add a commit message (ex: "First commit") and click "Commit" then "Push" or "Sync Changes". And you're done!
+[Grading Criteria](https://joselitoguardado.dev/3326/labs/Lab_14.pdf)
+
+[How to Submit Assignments to GitHub](https://joselitoguardado.dev/3326/How_to_Submit_Assignments_to_GitHub.pdf)
