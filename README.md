@@ -44,7 +44,9 @@ For example, look at the image below and see how array `arr` is passed into func
 
 For this assignment you will practice working with **pass-by-copy** and **pass-by-reference** parameters.
 
-Create the following **3 functions** and call them inside the main() function. See if which elements got updated to determine if they were passed-by-copy or passed-by-reference.
+Create the following **3 void functions** and call them inside the main() function. See if which elements got updated to determine if they were passed-by-copy or passed-by-reference.
+
+Remember to make the functions **static**.
 
 - `incrementVar( x )` method should have a single integer parameter and increment it by 1.
 - `incrementArr( []x )` method should have a single integer array parameter and incrment all values by 1.

@@ -17,7 +17,7 @@ public class MainTest {
 		Main.incrementArr(x);
 		Main.incrementArr(y);
 		assertArrayEquals(new int[]{3, 5, 7}, x);
-		assertArrayEquals(new int[]{4, 7, 10, 13, 16}, x);
+		assertArrayEquals(new int[]{4, 7, 10, 13, 16}, y);
 	}
 
 	@Test
