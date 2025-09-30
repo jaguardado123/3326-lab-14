@@ -1,6 +1,6 @@
-# Lab Assignment 14
+# Lab 14
 
-In this lab you will practice working with pass-by-reference parameters.
+In this lab you will practice working with **parameters & pointers referencing memory**.
 
 Unlike previous labs, your class has already been created for you. 
 
@@ -10,7 +10,7 @@ For this lab your **main() method** is in the Main class. For this lab you can c
 
 Now let's begin!
 
-## Pass-By-Copy
+## Passing Primitive Data Types
 
 In Java, when passing variables from functions they are always `passed-by-copy`. What does this mean?
 
@@ -22,13 +22,13 @@ For example, look at the image below and see how variable `x` is passed to the f
 
 <img src="img/pass_by_copy.png" width="300px">
 
-## Pass-By-Reference
+## Passing Array and Object Memory Address
 
-However, there are excemptions to passing-by-copy. When dealing with large data structures like arrays and objects it's inconvenient for Java to make copies of them, since this would waste a lot of memory. Instead, arrays and objects are `passed-by-reference`. What does this mean?
+When dealing with large data structures like arrays and objects it's inconvenient for Java to make copies of them, since this would waste a lot of memory. Instead, arrays and objects are passed uisng `pointers` that point to or reference their location in memory. What does this mean?
 
-When something is passed-by-reference, the memory location of the original element is given and is then assigned a new alias or identifier. Thus, <ins>no new element was created</ins>.
+**Pointers** are variables that store a memory address rather than a literal value. These special variables reference or point to a location in memory where the element is stored. Keep in mind, the parameter pointer and the original pointer are two seperate variables.
 
-For example, look at the image below and see how array `arr` is passed into function `example()` and received by the parameter array `p_arr`. Now, `arr` and `p_arr` are the same array, this is because the memory location of `arr` was assigned to `p_arr`. This means they are linked and modifying `p_arr` will modify `arr`.
+For example, look at the image below and see how array `arr` is passed into function `example()` and received by the parameter array `p_arr`. Now, `arr` and `p_arr` are the same array, this is because `arr` and `p_arr` are both pointers storing the same memory address. This means they are both referencing or pointing to the same memory location, thus modifying `p_arr` will modify `arr`.
 
 **Passing Arrays:**
 
@@ -42,9 +42,9 @@ For example, look at the image below and see how array `arr` is passed into func
 
 ### Increment by One
 
-For this assignment you will practice working with **pass-by-copy** and **pass-by-reference** parameters.
+For this assignment you will practice working with different **function parameters** by creating functions that receive **primitive data types** and **memory addresses**.
 
-Create the following **3 void functions** and call them inside the main() function. See if which elements got updated to determine if they were passed-by-copy or passed-by-reference.
+Create the following **3 void functions** and call them inside the main() function. See which elements got updated to determine if they were pass-by-copy or passed via pointer.
 
 Remember to make the functions **static**.
 
@@ -57,8 +57,14 @@ You can test your code by running the following command in your terminal.
 ./test.sh
 ```
 
-## Submit your assignment
+<br>
 
-[Grading Criteria](https://joselitoguardado.dev/3326/labs/Lab_14.pdf)
+**Grading Criteria:**
+| Criteria | Points |
+|---|---|
+| Program passes all the test cases. | 60 (20 per test) |
+| Functions are the correct type (void, int, float, etc.).  | 15 |
+| Functions have the correct amount and type of parameters. | 15 |
+| Functions are static. | 10 |
 
 [How to Submit Assignments to GitHub](https://joselitoguardado.dev/3326/How_to_Submit_Assignments_to_GitHub.pdf)
